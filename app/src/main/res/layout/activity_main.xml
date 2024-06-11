@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D557C">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Nama aplikasi di bagian atas -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/inknut_antiqua"
+            android:text="Random Team Generator"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Field untuk memasukkan nama-nama anggota -->
+        <EditText
+            android:id="@+id/inputNames"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="top|start"
+            android:hint="Masukkan nama-nama anggota, pisahkan dengan koma"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <!-- Spinner untuk memilih jumlah tim -->
+        <Spinner
+            android:id="@+id/teamCountSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <!-- Button untuk menggenerate team -->
+        <Button
+            android:id="@+id/generateButton"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#3682C2"
+            android:fontFamily="@font/inter_bold"
+            android:text="Generate Teams"
+            android:textColor="@color/white" />
+
+        <!-- Button untuk menghapus hasil team -->
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#3682C2"
+            android:fontFamily="@font/inter_bold"
+            android:text="Clear"
+            android:textColor="@color/white" />
+
+        <!-- Button untuk Biodata -->
+        <Button
+            android:id="@+id/biodataButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#3682C2"
+            android:fontFamily="@font/inter_bold"
+            android:text="About"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#7C0A02"
+            android:fontFamily="@font/poppins_bold"
+            android:text="LOGOUT"
+            android:textColor="@color/white" />
+
+        <!-- TextView untuk menampilkan hasil team -->
+        <TextView
+            android:id="@+id/outputTeams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>
